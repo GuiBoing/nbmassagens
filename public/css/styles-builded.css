@@ -1,0 +1,165 @@
+* {
+  --leaf: #38402F;
+  --olive: #7B8D68;
+  --bone: #E7CB96;
+  --white: #ffffff;
+  --shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+* .custom-title, main section.contato .about p, main section.intro div.texts p.title {
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+  font-family: Raleway;
+}
+* .custom-body, main section.contato .about span, main section.about aside span, header .page-head span {
+  color: #000000;
+  font-size: 16px;
+  font-family: Mukta;
+  line-height: normal;
+}
+* .custom-header, main section.about aside p, main section.intro div.texts p.subtitle, header .page-head {
+  line-height: normal;
+  color: #000000;
+  font-size: 20px;
+  font-family: Inria Sans;
+}
+* p {
+  margin-bottom: 0px;
+}
+* body {
+  background-color: var(--olive);
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--olive);
+  height: 45px;
+}
+header .page-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--bone);
+  padding: 3px 28px;
+}
+header .page-head p {
+  margin: 0px;
+}
+main {
+  margin-top: 45px;
+}
+main section.intro {
+  height: 425px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--leaf);
+  flex-direction: column;
+}
+main section.intro img.avatar {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+main section.intro div.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bone);
+  border-radius: 8px;
+}
+main section.intro div.texts p.title {
+  padding: 0px 10px;
+}
+main section.about {
+  display: flex;
+}
+main section.about img {
+  width: 100%;
+  height: 55vmax;
+  filter: blur(5.5px);
+}
+main section.about aside {
+  position: absolute;
+  height: 40vh;
+  width: 45%;
+  margin: 10% 3%;
+  padding: 20px;
+  background-color: var(--bone);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+}
+main section.about aside p {
+  margin-bottom: 4px;
+}
+main section.about.left {
+  flex-direction: row;
+}
+main section.about.right {
+  flex-direction: row-reverse;
+}
+main div.separator {
+  display: flex;
+  flex-direction: column;
+  margin: -4px auto;
+  width: 100%;
+  background-color: var(--olive);
+}
+main div.separator.upside {
+  transform: rotate(180deg);
+  margin-top: 4px;
+}
+main section.contato {
+  height: 95vh;
+}
+main section.contato .about {
+  width: 80%;
+  height: calc(100vh - 5%);
+  margin: 10% 10% 0px 10%;
+  background-color: var(--bone);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main section.contato .about p {
+  text-align: center;
+  margin-top: 20px;
+}
+main section.contato .about span {
+  text-align: center;
+  margin-bottom: 20px;
+}
+main section.contato .about .grid-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  width: 75%;
+}
+main section.contato .about .grid-icons a {
+  height: 60px;
+  width: 60px;
+}
+main section.contato .about .grid-icons a i {
+  height: 60px;
+  width: 60px;
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=styles-builded.css.map */
